@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mvc_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZj-pj-k9j">
+                                <rect key="frame" x="179" y="74" width="242" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="9xy-D8-tbg"/>
+                                    <constraint firstAttribute="width" constant="242" id="mD3-eb-HvR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minion" translatesAutoresizingMaskIntoConstraints="NO" id="7q7-kZ-kep" customClass="RoundedImageView" customModule="mvc_test" customModuleProvider="target">
+                                <rect key="frame" x="250.5" y="144" width="100" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="6M6-hW-2gH"/>
+                                    <constraint firstAttribute="width" constant="100" id="u09-2M-pas"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a new first name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wrh-o1-eOL">
+                                <rect key="frame" x="178" y="383" width="245" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="245" id="Kib-lS-FrU"/>
+                                    <constraint firstAttribute="height" constant="30" id="dQh-lb-nSu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOW-jm-Wbe">
+                                <rect key="frame" x="249" y="421" width="101" height="62"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="KY3-iv-4cJ"/>
+                                    <constraint firstAttribute="height" constant="30" id="to2-kM-2e9"/>
+                                </constraints>
+                                <state key="normal" title="Rename"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="renamePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yaK-Ym-t5r"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7q7-kZ-kep" firstAttribute="top" secondItem="TZj-pj-k9j" secondAttribute="bottom" constant="41" id="5BP-Hy-8zO"/>
+                            <constraint firstItem="TZj-pj-k9j" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="DAy-7r-emW"/>
+                            <constraint firstItem="wrh-o1-eOL" firstAttribute="top" secondItem="7q7-kZ-kep" secondAttribute="bottom" constant="39" id="Dxy-QV-v4u"/>
+                            <constraint firstItem="YOW-jm-Wbe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FD0-RA-s9N"/>
+                            <constraint firstItem="7q7-kZ-kep" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hw2-47-sdc"/>
+                            <constraint firstItem="YOW-jm-Wbe" firstAttribute="top" secondItem="wrh-o1-eOL" secondAttribute="bottom" constant="15" id="JHs-rx-qUl"/>
+                            <constraint firstItem="wrh-o1-eOL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dfx-cM-eEi"/>
+                            <constraint firstItem="TZj-pj-k9j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dgG-0s-Inr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fullName" destination="TZj-pj-k9j" id="CmV-XZ-4HM"/>
+                        <outlet property="renameField" destination="wrh-o1-eOL" id="ASw-ZY-54u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="minion" width="960" height="641"/>
+    </resources>
+</document>
